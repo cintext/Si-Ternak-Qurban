@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SITEQ - Pilih Role</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-600 text-white flex items-center justify-center px-4">
+  <div class="w-full max-w-5xl">
+    <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-3xl shadow-2xl p-6 sm:p-10">
+      <div class="text-center mb-8">
+        <div class="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-white p-1 border border-white/20 shadow-inner mb-4 overflow-hidden">
+          <img src="./logo-siteq.png" alt="Logo SITEQ" class="w-full h-full object-contain rounded-xl" />
+        </div>
+        <h1 class="text-2xl sm:text-4xl font-black tracking-tight">Pilih Akses Website</h1>
+        <p class="mt-3 text-sm sm:text-base text-emerald-100">Pilih versi yang sesuai untuk kebutuhanmu, apakah untuk penjual atau pembeli qurban.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <a href="siteq-penjual.html" class="group block rounded-2xl border border-emerald-200 bg-white text-slate-800 p-6 shadow-lg hover:scale-[1.01] transition-all">
+          <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/>
+              <path d="M6 18V8l6-4 6 4v10"/>
+              <path d="M9 18v-6h6v6"/>
+            </svg>
+          </div>
+          <div class="text-xs uppercase tracking-[0.2em] text-brand-700 font-bold mb-2">Akses Penjual</div>
+          <h2 class="text-2xl font-black">Dashboard Penjual</h2>
+          <p class="mt-3 text-sm text-slate-600">Kelola data hewan, tandai kandang, lihat status qurban, dan update stok secara terstruktur.</p>
+          <div class="mt-5 inline-flex items-center gap-2 bg-brand-700 hover:bg-brand-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+            Masuk sebagai Penjual
+            <span aria-hidden="true">→</span>
+          </div>
+        </a>
+
+        <a href="siteq-pembeli.html" class="group block rounded-2xl border border-emerald-200 bg-white text-slate-800 p-6 shadow-lg hover:scale-[1.01] transition-all">
+          <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-amber-100 text-amber-700 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 8h12l-1 11H7L6 8Z"/>
+              <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+              <path d="M12 12v4"/>
+            </svg>
+          </div>
+          <div class="text-xs uppercase tracking-[0.2em] text-amber-700 font-bold mb-2">Akses Pembeli</div>
+          <h2 class="text-2xl font-black">Halaman Pembeli</h2>
+          <p class="mt-3 text-sm text-slate-600">Lihat katalog hewan qurban, pilih kandang, dan pesan ternak dengan tampilan yang lebih nyaman untuk pembeli.</p>
+          <div class="mt-5 inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+            Masuk sebagai Pembeli
+            <span aria-hidden="true">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
